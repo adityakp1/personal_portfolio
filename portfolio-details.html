@@ -100,6 +100,30 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  
+  <script>
+    // D-R-C
+    document.addEventListener('contextmenu', function (e) {
+            e.preventDefault()
+            
+        });
+
+        function ctrlShiftKey(e, keyCode) {
+            return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+        }
+
+        document.onkeydown = (e) => {
+            // D-12, C-S-I, C-S-J, C-U; 
+            if (
+                event.keyCode === 123 ||
+                ctrlShiftKey(e, 'I') ||
+                ctrlShiftKey(e, 'J') ||
+                ctrlShiftKey(e, 'C') ||
+                (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+            )
+                return false;
+        };
+  </script>
 
 </body>
 
