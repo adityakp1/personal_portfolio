@@ -47,6 +47,12 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.logo{
+  margin-inline-end: 1rem;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -128,18 +134,28 @@ h6 {
 }
 
 @media (max-width: 992px) {
+
+  .logo{
+    display: none;
+  }
+
   #header h1 {
-    font-size: 36px;
+    font-size: 40px;
   }
 
   #header h2 {
-    font-size: 22px;
+    font-size: 25px;
     line-height: 30px;
     font-weight: 500;
+    margin-top: 3rem;
   }
 
   #header .social-links {
     margin-top: 15px;
+  }
+
+  #header .social-links a{
+    font-size: 18px;
   }
 
   #header .container {
@@ -242,12 +258,11 @@ h6 {
 }
 
 @keyframes blinker { 
-  from { opacity: 1.0; } to { opacity: 0.0; }
+  from {
+     opacity: 1.0; 
+    } to {
+       opacity: 0.0; }
 }
-
-/* Styling stuff not needed for demo */
-/* h1 { display:flex; align-items: center; justify-content: center; font-size: 80px; }
-time { font-size: 12px; color:rgba(white,.2); } */
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -426,7 +441,7 @@ section .container {
 }
 
 .hero .hero-subtitle {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   font-weight: 700;
 }
 
