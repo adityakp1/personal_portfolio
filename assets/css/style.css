@@ -76,14 +76,18 @@ h6 {
 #header h1 a,
 #header h1 a:hover {
   color: #fff;
+  background: -webkit-linear-gradient(#2a8bc1, #d0a0ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   line-height: 1;
   display: inline-block;
 }
 
 #header h2 {
-  font-size: 24px;
+  font-size: 26px;
   margin-top: 20px;
   color: rgba(255, 255, 255, 0.8);
+  margin-top: 2rem;
 }
 
 #header h2 span {
@@ -116,6 +120,13 @@ h6 {
   height: 40px;
 }
 
+@media (max-width: 350px) {
+  #header h2 {
+    margin-top: 4rem;
+    word-wrap: break-word;
+  }
+}
+
 @media (max-width: 992px) {
   #header h1 {
     font-size: 36px;
@@ -136,7 +147,7 @@ h6 {
     flex-direction: column;
     align-items: center;
     margin-top: 3.4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
   }
 
   #header{
@@ -274,7 +285,7 @@ time { font-size: 12px; color:rgba(white,.2); } */
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: rgb(170, 241, 218);
+  color: #94bbe9;
   padding: 5px 15px;
   white-space: nowrap;
   transition: 0.3s;
@@ -294,7 +305,7 @@ time { font-size: 12px; color:rgba(white,.2); } */
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: rgb(74, 200, 158);
+  background-color: #94bbe9;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -312,7 +323,7 @@ time { font-size: 12px; color:rgba(white,.2); } */
 .navbar .active:focus,
 .navbar li:hover>a {
   color:rgba(255, 255, 255, 0.938);
-  background: rgba(31, 160, 117, 0.235);
+  background: linear-gradient(135deg, rgba(148,187,233,1) 10%, rgba(166,12,221,1) 100%);
   padding: 5px 15px;
   display: block;
 }
@@ -446,7 +457,7 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #4ceb95;
+  background: #94bbe9;
   margin: 4px 10px;
 }
 
@@ -457,7 +468,9 @@ section .container {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  background: -webkit-linear-gradient(rgba(40, 92, 212, 0.824) -3%, rgba(171, 53, 163, 0.642) 49.3%, rgba(255,204,112,0.37) 97.7% );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*--------------------------------------------------------------
@@ -466,8 +479,16 @@ section .container {
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #0c9fb3;
+  background: -webkit-linear-gradient(rgb(206, 94, 161), rgb(53, 28, 127));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* rgb(36, 19, 89), rgb(213, 72, 156) */
 }
+
+/* rgb(36, 19, 89), rgb(213, 72, 156) */
+
+/* background-image: linear-gradient( 58.2deg,  rgba(40,91,212,0.73) -3%, rgba(171,53,163,0.45) 49.3%, rgba(255,204,112,0.37) 97.7% ); */
 
 .about-me .content ul {
   list-style: none;
@@ -518,7 +539,7 @@ section .container {
   font-size: 34px;
   background: rgba(255, 255, 255, 0.1);
   padding: 12px;
-  color: #097280;
+  color: #94bbe9;
   border-radius: 50px;
   line-height: 0;
 }
@@ -1234,7 +1255,7 @@ section .container {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgb(167, 126, 1);
+  background: (rgb(36, 19, 89), rgb(213, 72, 156));
 }
 
 @keyframes animate-loading {
