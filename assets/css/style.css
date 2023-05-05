@@ -1,6 +1,5 @@
-
 /*--------------------------------------------------------------
-# General
+# General Styling
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
@@ -29,12 +28,12 @@ body::before {
 }
 
 a {
-  color: #18d26e;
+  color: #94bbe9;
   text-decoration: none;
 }
 
 a:hover {
-  color: #35e888;
+  color: #94bbe9;
   text-decoration: none;
 }
 
@@ -1093,7 +1092,7 @@ background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
 }
 
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: #94bbe9;
 }
 
 /*--------------------------------------------------------------
@@ -1132,6 +1131,24 @@ background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
 
 .contact .info-box .location{
   color: #fff;
+}
+
+.contact .info-box .location:hover{
+  color: rgb(241, 200, 77);
+  text-decoration: underline;
+  transition: .3s ease-in-out;
+}
+
+.connect-mail:hover{
+  text-decoration: underline;
+  transition: .3s ease-in-out;
+  color: #94bbe9;
+}
+
+.connect-phone:hover{
+  text-decoration: underline;
+  transition: .3s ease-in-out;
+  color: #94bbe9;
 }
 
 .contact .info-box .social-links {
@@ -1319,7 +1336,7 @@ background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
 }
 
 .credits a {
-  color: #18d26e;
+  color: #94bbe9;
   transition: 0.3s;
 }
 

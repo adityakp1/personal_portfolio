@@ -1,9 +1,11 @@
-
+/**
+   # Main function
+   */
 (function() {
   "use strict";
 
   /**
-   * Easy selector helper function
+   # Easy selector helper function
    */
   const select = (el, all = false) => {
     el = el.trim()
@@ -15,7 +17,7 @@
   }
 
   /**
-   * Easy event listener function
+   # Easy event listener function
    */
   const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all)
@@ -30,7 +32,7 @@
   }
 
   /**
-   * Scrolls to an element with header offset
+   # Scrolls to an element with header offset
    */
   const scrollto = (el) => {
     window.scrollTo({
@@ -40,7 +42,7 @@
   }
 
   /**
-   * Mobile nav toggle
+   # Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {
     select('#navbar').classList.toggle('navbar-mobile')
@@ -49,7 +51,7 @@
   })
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   # Scrool with ofset on links with a class name .scrollto
    */
   on('click', '#navbar .nav-link', function(e) {
     let section = select(this.hash)
@@ -103,7 +105,7 @@
   }, true)
 
   /**
-   * Intro type effect
+   # Intro type effect
    */
   const typed = select('.typed')
   if (typed) {
@@ -119,7 +121,7 @@
   }
 
   /**
-   * Activate/show sections on load with hash links
+   * Activate/show sections on Reload links
    */
   window.addEventListener('load', () => {
     if (window.location.hash) {
