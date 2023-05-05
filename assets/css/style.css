@@ -1112,17 +1112,21 @@ section .container {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255 255 255 / 79%);
   font-weight: 700;
   margin: 10px 0 8px 68px;
 }
 
 .contact .info-box p {
   padding: 0;
-  color: #fff;
+  color:#94bbe9;
   line-height: 24px;
   font-size: 14px;
   margin: 0 0 0 68px;
+}
+
+.contact .info-box .location{
+  color: #fff;
 }
 
 .contact .info-box .social-links {
