@@ -1151,6 +1151,16 @@ background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
   color: #94bbe9;
 }
 
+.location{
+  color: #fff;
+}
+
+.location:hover{
+  text-decoration: underline;
+  transition: .3s ease-in-out;
+  color: #94bbe9;
+}
+
 .contact .info-box .social-links {
   margin: 5px 0 0 68px;
   display: flex;
