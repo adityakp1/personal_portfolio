@@ -860,10 +860,37 @@ background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
 
 }
 
-.services .icon-box:hover h4 a,
-.services .icon-box:hover p {
-  color: #fff;
-}
+
+.services .icon-box h4{
+    font-family:"Abril Fatface", sans-serif;
+    background: linear-gradient(90deg, #FF3CAC 0%, #784BA0 50%, #339de9e7 100%);
+    animation: rainbow 1.4s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color:#fff;
+    display: block;
+    background-size: 200% 200% ;
+    transition: color .2s ease-in-out;
+  }
+
+
+
+  
+  .services .icon-box a:hover{
+    color:rgba(0,0,0,0);
+    cursor: pointer;
+  }
+
+  .services .icon-box a:hover .services .icon-box:hover{
+    background-color: #0c0c0c;
+    background-image: #0c0c0c;
+  }
+
+  @keyframes rainbow { 
+    0%{background-position:left}
+    60%{background-position:right}
+    100%{background-position:left}
+  }
 
 /*--------------------------------------------------------------
 # Portfolio
