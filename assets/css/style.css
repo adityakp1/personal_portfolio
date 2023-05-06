@@ -1376,11 +1376,10 @@ background-image: linear-gradient(43deg, rgba(255, 255, 255, 0.15) 0%, rgba(255,
   justify-content: center;
   align-items: center;
   background-color: rgb(52, 160, 184);
-  box-shadow: 0 1px 7px 0 #0c9fb3;
-  color: whitesmoke;
-  font-weight: 760;
-  font-size: 16px;
-  text-shadow: 1px .3px 3px rgb(255, 134, 134);
+  box-shadow: 0 1px 7px 0 #FFF6B7;
+  font-weight: 600;
+  background-image: linear-gradient( 165deg, #F6416C 10%,  #FFF6B7 100%);
+  text-shadow: .5px .3px 3px #aceaf3;
   padding: 10px;
   border-radius: 5px;
   text-align: center;
@@ -1388,13 +1387,14 @@ background-image: linear-gradient(43deg, rgba(255, 255, 255, 0.15) 0%, rgba(255,
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  font-size: 20px;
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 13px;
+  /* background: -webkit-linear-gradient( #FFF6B7, #F6416C); */
+ 
+  
 }
 
+
+/* background-image: linear-gradient( 135deg, #FFF6B7 10%, #F6416C 100%); */
 
 
 /*--------------------------------------------------------------
