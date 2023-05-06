@@ -795,6 +795,12 @@
     </div>
   </section><!-- End Contact Section -->
 
+  <div>
+    <div class="auraBoxContainer"></div>
+    
+  </div>
+  
+  
   <div class="credits">
     <!-- Designed & Created by <a href="#">Aditya Pandey</a> -->
   </div>
@@ -847,6 +853,50 @@
   </script>
 
   <script src="/assets/js/profile.js" async defer type="text/javascript"></script>
+
+  <script>
+    window.onload = function() {
+        // Disable text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+            showError();
+        });
+
+        // Show error message
+        function showError() {
+            var container = document.querySelector('.auraBoxContainer');
+            var existingError = document.querySelector('.auraBoxError');
+            console.log(container);
+            if (container) {
+                // Remove existing error message
+                if (existingError) {
+                    existingError.remove();
+                }
+                
+                var error = document.createElement('div');
+                error.innerHTML = '	&#9888; Alert: Copying is not allowed.';
+                error.className = 'auraBoxError';
+
+                // error.style.color = 'rgb(52, 160, 184)';
+                // error.style.zIndex = "9999";
+                // error.style.display = "block";
+                // error.style.backgroundColor = "#ff0000";
+                // error.style.color = "#ffffff";
+                // error.style.padding = "10px";
+                // error.style.borderRadius = "5px";
+                // error.style.textAlign = "center";
+
+                container.appendChild(error);
+
+                // Clear error message after 3 seconds
+                setTimeout(function() {
+                    error.remove();
+                    
+                }, 3000);
+            }
+        }
+    };
+</script>
 
 
 

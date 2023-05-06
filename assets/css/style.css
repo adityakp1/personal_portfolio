@@ -991,7 +991,7 @@ background-image: linear-gradient(43deg, rgba(255, 255, 255, 0.15) 0%, rgba(255,
   border-bottom: 3px solid #fff;
   border-right: 3px solid #fff;
   transition: all 0.5s ease 0s;
-  z-index: 9994;
+  z-index: 994;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
@@ -1355,6 +1355,47 @@ background-image: linear-gradient(43deg, rgba(255, 255, 255, 0.15) 0%, rgba(255,
     transform: rotate(360deg);
   }
 }
+
+/*--------------------------------------------------------------
+# Append
+--------------------------------------------------------------*/
+
+.auraBoxContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+.auraBoxError {
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(52, 160, 184);
+  box-shadow: 0 1px 7px 0 #0c9fb3;
+  color: whitesmoke;
+  font-weight: 760;
+  font-size: 16px;
+  text-shadow: 1px .3px 3px rgb(255, 134, 134);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 20px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 
 /*--------------------------------------------------------------
 # Credits
