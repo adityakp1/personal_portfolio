@@ -872,9 +872,6 @@ background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
     background-size: 200% 200% ;
     transition: color .2s ease-in-out;
   }
-
-
-
   
   .services .icon-box a:hover{
     color:rgba(0,0,0,0);
@@ -882,8 +879,8 @@ background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
   }
 
   .services .icon-box a:hover .services .icon-box:hover{
-    background-color: #0c0c0c;
-    background-image: #0c0c0c;
+    background-color: rgba(255, 255, 255, 0.15);
+background-image: linear-gradient(43deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 46%, rgba(255, 255, 255, 0.15) 100%);
   }
 
   @keyframes rainbow { 
@@ -1324,20 +1321,31 @@ background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
 }
 
 .button_submit{
-  background-image: linear-gradient(to right, #314755 10%, #26a0da  90%, #314755  100%);
+  background-image: linear-gradient(to right, #003973 0%, #f0d1e9 51%, #73006d 100%);
   border: 0;
-  padding: 10px 30px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
+  padding: 11px 33px;
+  
+  border-radius: 7px;
+  margin-top: 1rem;
+  font-size: 17px;
+  width: 190px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    text-align:center;
+    background-size: 250% auto;
+
+    transition: .6s;
 }
+
 
 .button_submit:hover {
-  background-position-x: right;
-  background-position-y: center;
-    text-decoration: none
+  background-position: right center;
+
+    box-shadow: 0 1px 7px 0 #f0d1e9;
 }
 
+/* Loading Progress  */
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
