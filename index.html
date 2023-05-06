@@ -866,6 +866,7 @@
         function showError() {
             var container = document.querySelector('.auraBoxContainer');
             var existingError = document.querySelector('.auraBoxError');
+
             console.log(container);
             if (container) {
                 // Remove existing error message
@@ -876,6 +877,10 @@
                 var error = document.createElement('div');
                 error.innerHTML = '	&#9888; Alert:&nbsp; Copying is not allowed.';
                 error.className = 'auraBoxError';
+                
+                
+            error.style.width = '300px';
+            error.style.height = '50px';
 
                 container.appendChild(error);
 
