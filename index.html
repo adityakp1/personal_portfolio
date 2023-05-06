@@ -898,6 +898,13 @@
             showError();
         });
 
+        // Show error message on touchstart if text is selected
+        document.addEventListener('touchstart', function(e) {
+            if (window.getSelection().toString().length > 0) {
+                showError();
+            }
+        });
+
         // Show error message
         function showError() {
             var container = document.querySelector('.auraBoxContainer');
