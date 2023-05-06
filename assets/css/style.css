@@ -1361,9 +1361,9 @@ background-image: linear-gradient(43deg, rgba(255, 255, 255, 0.15) 0%, rgba(255,
 --------------------------------------------------------------*/
 
 .auraBoxContainer {
-  position: relative;
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 50vh;
+  left: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1377,17 +1377,20 @@ background-image: linear-gradient(43deg, rgba(255, 255, 255, 0.15) 0%, rgba(255,
   align-items: center;
   background-color: rgb(52, 160, 184);
   box-shadow: 0 1px 7px 0 #FFF6B7;
+  color: #fff;
   font-weight: 600;
-  background-image: linear-gradient( 165deg, #F6416C 10%,  #FFF6B7 100%);
-  text-shadow: .5px .3px 3px #aceaf3;
-  padding: 10px;
+  background-image: linear-gradient( 135deg, #f1197e 6%,  #FFF6B7 100%);
+  /* text-shadow: .5px .3px 3px #aceaf3; */
+  padding: 2px;
   border-radius: 5px;
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 12px;
+  font-size: 14.4px;
+  width: 250px;
+  height: 40px;
   /* background: -webkit-linear-gradient( #FFF6B7, #F6416C); */
  
   
@@ -1431,7 +1434,9 @@ background-image: linear-gradient(43deg, rgba(255, 255, 255, 0.15) 0%, rgba(255,
     
 
     .auraBoxError {
-      font-size: 12px;
+      font-size: 10px;
+  width: 190px;
+  height: 30px;
     }
 
 }

@@ -7,7 +7,7 @@
 
   <title>Aditya Pandey</title>
 <meta
-    content="Hello! My name is Aditya Pandey, and I'm a student of Arya Group of College CSE'25. I've worked on projects ranging from web applications to android applications, and am always looking for new challenges."
+    content="Hello! This is Aditya Pandey, I've worked on projects ranging from web applications to android applications, and am always looking for new challenges."
     name="description">
 
   <meta content="" name="keywords">
@@ -38,11 +38,12 @@
 
   <!-- Header -->
   <header id="header">
+
     <div class="container">
 
-      <h1><img class="logo" src="/assets/img/favicon.png" alt="" width="47px" style="margin-inline-end: 1rem
-      ;"><a href="index.html">Aditya Pandey</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
+      <h1>
+        <img class="logo" src="/assets/img/favicon.png" alt="" width="47px" style="margin-inline-end: 1rem;"><a href="index.html">Aditya Pandey</a></h1>
+      
       <h2 class="hero-subtitle">I'm a passionate <br>
         <span class="typed" data-typed-items="Developer, Freelancer, Photographer, Designer, Editor"></span>
       </h2>
@@ -801,6 +802,7 @@
   </div>
   
   
+  
   <div class="credits">
     <!-- Designed & Created by <a href="#">Aditya Pandey</a> -->
   </div>
@@ -859,6 +861,40 @@
         // Disable text selection
         document.addEventListener('selectstart', function(e) {
             e.preventDefault();
+            
+        });
+
+        // Disable text copying and show error message
+        var isCopying = false;
+        document.addEventListener('keydown', function(e) {
+            // Check if the user is holding down the "Ctrl" or "Command" key
+            if ((e.ctrlKey || e.metaKey) && e.keyCode === 67) {
+                isCopying = true;
+            }
+        });
+        
+        document.addEventListener('copy', function(e) {
+            if (isCopying) {
+                e.preventDefault();
+                showError();
+                isCopying = false;
+            }
+        });
+
+        // Show error message on double-click
+        document.addEventListener('dblclick', function(e) {
+            e.preventDefault();
+            showError();
+        });
+
+        // Disable another events
+        document.addEventListener('cut', function(e) {
+            e.preventDefault();
+            showError();
+        });
+
+        document.addEventListener('paste', function(e) {
+            e.preventDefault();
             showError();
         });
 
@@ -867,7 +903,6 @@
             var container = document.querySelector('.auraBoxContainer');
             var existingError = document.querySelector('.auraBoxError');
 
-            console.log(container);
             if (container) {
                 // Remove existing error message
                 if (existingError) {
@@ -875,19 +910,14 @@
                 }
                 
                 var error = document.createElement('div');
-                error.innerHTML = '	&#9888; Alert:&nbsp; Copying is not allowed.';
+                error.innerHTML = '<img src="assets/img/warning.png" width="25px">&nbsp; Alert: Copying is not allowed.';
                 error.className = 'auraBoxError';
                 
-                
-            error.style.width = '300px';
-            error.style.height = '50px';
-
                 container.appendChild(error);
 
                 // Clear error message after 3 seconds
                 setTimeout(function() {
                     error.remove();
-                    
                 }, 3000);
             }
         }
