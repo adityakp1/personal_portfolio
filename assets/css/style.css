@@ -1361,7 +1361,7 @@ background-image: linear-gradient(43deg, rgba(255, 255, 255, 0.15) 0%, rgba(255,
 --------------------------------------------------------------*/
 
 .auraBoxContainer {
-  position: absolute;
+  position: fixed;
   top: 50vh;
   left: 50%;
   display: flex;
@@ -1377,9 +1377,9 @@ background-image: linear-gradient(43deg, rgba(255, 255, 255, 0.15) 0%, rgba(255,
   align-items: center;
   background-color: rgb(52, 160, 184);
   box-shadow: 0 1px 7px 0 #FFF6B7;
-  color: #fff;
+  color: #ffffff;
   font-weight: 600;
-  background-image: linear-gradient( 160deg, #f1197eb7 6%,  #fff7b7b7 100%);
+  background-image: linear-gradient( 150deg, #ec4191cf 6%,  #fff7b7b7 100%);
   /* text-shadow: .5px .3px 3px #aceaf3; */
   padding: 2px;
   border-color: #ffffff;
