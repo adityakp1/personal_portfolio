@@ -1387,7 +1387,7 @@ background-image: linear-gradient(43deg, rgba(255, 255, 255, 0.15) 0%, rgba(255,
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 13px;
+  font-size: 12px;
   /* background: -webkit-linear-gradient( #FFF6B7, #F6416C); */
  
   
@@ -1419,13 +1419,21 @@ background-image: linear-gradient(43deg, rgba(255, 255, 255, 0.15) 0%, rgba(255,
     padding: 10px;
     background: rgba(0, 0, 0, 0.8);
   }
+
+    .credits a {
+      color: #94bbe9;
+      transition: 0.3s;
+    }
+    
+    .credits a:hover {
+      color: #fff;
+    }
+    
+
+    .auraBoxError {
+      font-size: 12px;
+    }
+
 }
 
-.credits a {
-  color: #94bbe9;
-  transition: 0.3s;
-}
 
-.credits a:hover {
-  color: #fff;
-}
