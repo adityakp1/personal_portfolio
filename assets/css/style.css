@@ -244,6 +244,14 @@ h6 {
   }
 }
 
+.sanskrit-shloka{
+  background: -webkit-linear-gradient(#a6d9f8,#d13a81cc);
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+}
+
 /*-------------------------------------------------------------
 # Typed Cursor
 --------------------------------------------------------------*/
