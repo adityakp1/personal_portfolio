@@ -95,8 +95,11 @@ h6 {
   margin-top: 2rem;
 }
 
-#header h2 span {
-  color: #c90;
+#header .typed {
+  background: -webkit-linear-gradient(#6ebac3, #ef8fcc);
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   /* border-bottom: 1.3px solid rgb(74, 200, 158);
   padding-bottom: 3px; */
 }
@@ -251,11 +254,12 @@ h6 {
   animation-duration: 1s;
   /* Basic styling   */
   display: inline-block;
-  margin-left: 10px;
-  border-radius: 3px;
+  margin-left: 5px;
+  border-radius: 1.3px;
   box-shadow: 0 0 10px rgba(white,.3);
-  background: #c90;
-  width: 4px;
+  background: -webkit-linear-gradient(#6ebac3, #ef8fcc);
+  width: 3px;
+  color: transparent;
 }
 
 @keyframes blinker { 
